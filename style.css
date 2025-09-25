@@ -275,7 +275,7 @@ nav ul li a.active {
 }
 
 .manfaat-section {
-  padding: 60px ;
+  padding: 100px 20px 60px; ;
   background-color: #e5d6bb;
   overflow: hidden;
   min-height: 600px; 
@@ -286,14 +286,14 @@ nav ul li a.active {
 }
 
 .manfaat-section.alt .manfaat-text {
-  margin-top: 80px;    
-  margin-right: 60px;  
+  margin-top: 20px;    
+  margin-right: 40px;  
   flex: 1;
 }
 
 .manfaat-section.alt .manfaat-img img {
-  margin-top: 40px;    
-  max-width: 300px;
+  margin-top: 0px;    
+  max-width: 280px;
   width: 100%;
   height: auto;
 }
@@ -315,7 +315,7 @@ nav ul li a.active {
   font-family: 'Playfair Display', serif;
   font-size: 32px;
   color: #3a1c00;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .manfaat-text ul {
@@ -377,11 +377,47 @@ nav ul li a.active {
   50% { transform: translateY(-15px); }
 }
 
-.manfaat-content {
-  position: relative;
-  z-index: 2; 
-}
+@media (max-width: 768px) {
+    .manfaat-section {
+    padding: 80px 15px 40px;
+  }
 
+  .manfaat-section.kopi .manfaat-content {
+    flex-direction: column-reverse; 
+    align-items: center;
+    gap: 30px;
+  }
+  .manfaat-content {
+    flex-direction: column;
+    gap: 30px; 
+    text-align: center;
+  }
+
+  .manfaat-text {
+    margin: 20px 0;  
+    margin-left: 0;
+  }
+
+  .manfaat-text h2 {
+    font-size: 24px; 
+  }
+
+  .manfaat-text ul li {
+    font-size: 16px;
+  }
+
+  .manfaat-section.kopi .manfaat-img img {
+    padding: 60px;
+    margin-top: 0;
+    max-width: 80%;
+    height: auto;
+  }
+
+  .manfaat-img img {
+    margin-top: 20px;
+    max-width: 80%;   
+  }
+}
 
 /* Footer */
 footer {
